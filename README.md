@@ -16,7 +16,7 @@
 - `in.*`：包含 LAMMPS 输入的文件，例如 `in.input`
 
 ### 2. 下载或创建脚本
-下载或复制代码保存为 `lammps_time_estimator.py`：
+下载或复制代码保存为 `lammps_time_estimator.py`
 
 ### 3. 运行脚本
 
