@@ -30,7 +30,7 @@ python lammps_time_estimator.py
 #### 指定文件和步数
 你也可以指定 `log.lammps` 文件和输入文件，或者直接指定总步数：
 ```sh
-python lammps_time_estimator.py --l log.lammps --i in.input --s 500000
+python lammps_time_estimator.py -l log.lammps -i in.input -s 500000
 ```
 s
 ### 4. 查看结果
