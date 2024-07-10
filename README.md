@@ -30,9 +30,9 @@ python lammps_time_estimator.py
 #### 指定文件和步数
 你也可以指定 `log.lammps` 文件和输入文件，或者直接指定总步数：
 ```sh
-python lammps_time_estimator.py --log_file log.lammps --in_file in.input --total_steps 500000
+python lammps_time_estimator.py --l log.lammps --i in.input --s 500000
 ```
-
+s
 ### 4. 查看结果
 脚本将输出读取到的 `loop time`，`procs` 和 `steps` 信息，并显示估算的总运行时间。例如：
 ```
