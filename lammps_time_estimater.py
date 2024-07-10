@@ -68,14 +68,14 @@ def find_input_file():
 
 def main():
     parser = argparse.ArgumentParser(description="Estimate LAMMPS simulation run time.")
-    parser.add_argument('--log_file', type=str, default='log.lammps', help="Path to the log.lammps file")
-    parser.add_argument('--in_file', type=str, help="Path to the input file (in.*). If not specified, the program will search for in.* in the current directory.")
-    parser.add_argument('--total_steps', type=int, help="Total number of steps for the simulation. If not specified, the program will extract from the input file.")
+    parser.add_argument('-l', type=str, default='log.lammps', help="Path to the log.lammps file")
+    parser.add_argument('-i', type=str, help="Path to the input file (in.*). If not specified, the program will search for in.* in the current directory.")
+    parser.add_argument('-s', type=int, help="Total number of steps for the simulation. If not specified, the program will extract from the input file.")
     args = parser.parse_args()
 
-    log_file = args.log_file
-    in_file = args.in_file
-    total_steps = args.total_steps
+    log_file = args.l
+    in_file = args.i
+    total_steps = args.s
 
     if not in_file:
         in_file = find_input_file()
